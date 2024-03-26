@@ -140,7 +140,7 @@ target_link_libraries(agv_${PROJECT_NAME} ${catkin_LIBRARIES})
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_node src/robot_info_main.cpp src/robot_info_class.cpp)
-add_executable(agv_${PROJECT_NAME}_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/robot_info_class.cpp)
+add_executable(agv_${PROJECT_NAME}_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/hydraulic_system_monitor.cpp src/robot_info_class.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
